@@ -37,7 +37,7 @@ public class TestBase {
 	public WebDriver initializeBrowserAndOpenApplication(String browserName) {
 		if(browserName.equals("chrome")) {
 			options = new ChromeOptions();
-			options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			options.addArguments("--start-maximized");
 			options.addArguments("--incognito");
 			options.setExperimentalOption("excludeSwitches",Arrays.asList("enable-automation","disable-infobars"));
